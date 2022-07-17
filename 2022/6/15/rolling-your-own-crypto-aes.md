@@ -16,17 +16,17 @@ There is a full, [open source implementation in C](https://github.com/francisrst
 
 ## AES
 
-AES, or the "Advanced Encryption Standard", is a extremely widely used symmetric block *cipher*. Symmetric here refers to the idea that both the one encrypting and the one decrypting use the same key. Block refers to the way in which the stuff you're encoding (the *plaintext*) is turned into the *ciphertext* (the random looking but reversible sequence of bytes that is the result of the encryption). Cipher refers any algorithm for encryption. A block cipher operates on multiple bytes of plaintext at the same time, arranged into a 2D block.
+AES, or the "Advanced Encryption Standard", is a extremely widely used symmetric block *cipher*. Symmetric here refers to the idea that both the one encrypting and the one decrypting use the same key. Block refers to the way in which the stuff you're encoding (the *plaintext*) is turned into the *ciphertext* (the random-looking but reversible sequence of bytes that is the result of the encryption). Cipher refers to any algorithm for encryption. A block cipher operates on multiple bytes of plaintext at the same time, arranged into a 2D block.
 
 <center><img src="../../../assets/AES-Block.png"></center>
 
-Each block is made up of 16 bytes (128 bits), and is arranged in column-major order. The big idea with AES is that this block is scrambled and mutated in a way that is completely reversible, driven by the *secret key*. The secret key is simply a sequence of bits that should only be known to the sender and the receiver. The choice of key must be a close to truly random is possible.
+Each block is made up of 16 bytes (128 bits), and is arranged in column-major order. The big idea with AES is that this block is scrambled and mutated in a way that is completely reversible, driven by the *secret key*. The secret key is simply a sequence of bits that should only be known to the sender and the receiver. The choice of key must be as close to truly random as possible.
 
 A block cipher can be contrasted with something like a *stream* cipher, where each byte of the plaintext is encrypted by itself using a *key stream*.
 
 When the details and mathematical abstractions have had time to sink in, AES may actually appear remarkably simple, but do not be deceived; this simplicity is the result of careful engineering and pragmatism. For me personally, it was humbling to realise that my being able to understand and implement AES was not a reflection on me or my own skills, but rather the ingeniousness of the designers.
 
-It is my aim that you come away from this article having a very good idea of how to implement AES yourself. We're going to look at the algorithm in-depth from beginning to end, answering questions like:
+It is my aim that you come away from this article having a very good idea of how to implement AES yourself. We're going to look at the algorithm in-depth, from beginning to end, answering questions like:
 
 - What are the operations and transformations involved?
 - What kind of math underpins AES?

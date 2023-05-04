@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "ESNext",
+      "moduleResolution": "node",
+      "strict": true,
+      "noImplicitAny": true,
+    },
+    "include": [
+      "*"
+    ]
+  }

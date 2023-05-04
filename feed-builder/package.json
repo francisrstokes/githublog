@@ -1,0 +1,27 @@
+{
+  "name": "feed-builder",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "An RSS feed builder for the githublog",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francisrstokes/githuBlog.git"
+  },
+  "author": "Francis Stokes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/francisrstokes/githuBlog/issues"
+  },
+  "homepage": "https://github.com/francisrstokes/githuBlog#readme",
+  "devDependencies": {
+    "@types/node": "^18.16.3"
+  },
+  "dependencies": {
+    "remark": "^14.0.2",
+    "strip-markdown": "^5.0.0"
+  }
+}

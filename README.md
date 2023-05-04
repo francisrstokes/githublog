@@ -2,6 +2,12 @@
 
 Hi, I'm Francis Stokes 👋 I'm sick of complex blogging solutions, so markdown files in a git repo it is.
 
+## RSS Feed
+
+[An RSS feed for this blog is available.](https://raw.githubusercontent.com/francisrstokes/githublog/main/feed.xml)
+
+The [feed generator is bespoke](./feed-builder/index.ts), and why you might argue that such a feature is adding complex to something that's meant to be simple, my response would be: *whatever* 🤷‍♂️
+
 ## Articles
 
 - [Building A Jank UART to USB Cable From Scavenged Parts](./2023/3/1/building-a-jank-uart-cable-from-scavenged-parts.md) [3/1/2023]

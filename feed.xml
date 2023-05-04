@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+ <title>Francis Stokes :: Githublog</title>
+ <description>I'm sick of complex blogging solutions, so markdown files in a git repo it is.</description>
+ <link>https://github.com/francisrstokes/githublog</link>
+ <copyright>2023 Francis Stokes - All rights reserved</copyright>
+ <lastBuildDate>Thu, 04 May 2023 09:10:53 GMT</lastBuildDate>
+ <pubDate>Thu, 04 May 2023 09:10:53 GMT</pubDate>
+ <ttl>1440</ttl>
+
+<item>
+  <title>Doing more than one thing at a time
+</title>
+  <description>How do computers run multiple independent programs at once? Maybe words like "multi-core" or "hardware threads" pop into your mind. These are some of the solutions of the modern age, which essentially just throw more hardware at the problem in order to achieve p...</description>
+  <link>https://github.com/francisrstokes/githublog/blob/main/2021/12/14/doing-more-than-one-thing.md</link>
+  <pubDate>Mon, 13 Dec 2021 23:00:00 GMT</pubDate>
+</item>
+
+<item>
+  <title>Notes on a lateral career move
+</title>
+  <description>I changed jobs recently. That's not all that uncommon for devs - in fact it's accepted wisdom that your best course of action is to switch every 2 years or so in order to maximise your salary. That may or may not be true, but it's not really the route I've taken. What was perhaps a little more unusual about my change was that I made a somewhat lateral move between fields of software engineering, from mostly web-based...</description>
+  <link>https://github.com/francisrstokes/githublog/blob/main/2022/4/29/notes-on-a-lateral-career-move.md</link>
+  <pubDate>Thu, 28 Apr 2022 22:00:00 GMT</pubDate>
+</item>
+
+<item>
+  <title>Rolling your own crypto: Everything you need to build AES from scratch (and then never use it for anything of consequence)
+</title>
+  <description>You often hear the phrase "Don't roll your own crypto". I think this sentence is missing an important qualifier: "...and then use it for anything of consequence". If you are building a product or service, or are trying to communicate privately, then you should absolutely pick a vetted, open source, off-the-shelf implementation and use it. If, however, your goal is to learn, then there is honestly no better wa...</description>
+  <link>https://github.com/francisrstokes/githublog/blob/main/2022/6/15/rolling-your-own-crypto-aes.md</link>
+  <pubDate>Tue, 14 Jun 2022 22:00:00 GMT</pubDate>
+</item>
+
+<item>
+  <title>Building A Jank UART to USB Cable From Scavenged Parts
+</title>
+  <description>My home "lab" is, unfortunately, a manifestation of the unwinnable, uphill battle against entropy. The latest victim to the sprawl of boards, prototypes, and other miscellanea was my little Adafruit CP2104 USB to serial converter. As far as I can tell, it has literally dropped off the face of the earth. This is particularly irritating as I'm in the middle of another project for an upcoming video on the \[channel]\(http...</description>
+  <link>https://github.com/francisrstokes/githublog/blob/main/2023/3/1/building-a-jank-uart-cable-from-scavenged-parts.md</link>
+  <pubDate>Tue, 28 Feb 2023 23:00:00 GMT</pubDate>
+</item>
+
+
+</channel>
+</rss>

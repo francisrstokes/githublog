@@ -1,0 +1,31 @@
+name: Update RSS feed
+on:
+  push:
+    branches:
+      - 'test-feed-action'
+jobs:
+  rss:
+    name: Update RSS feed
+    if: ${{ !contains(github.event.head_commit.message, '#update-rss-feed') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+
+      - run: |
+          cd feed-builder
+          npm i
+          npm i -g ts-node
+      - run: sh ./generate-feed.sh
+      - run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+      - run: |
+          git add feed.xml
+          git commit -m "#update-rss-feed"
+          git push origin test-feed-action

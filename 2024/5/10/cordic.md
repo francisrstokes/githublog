@@ -77,9 +77,16 @@ It's sort of like a binary search:  You move towards the target angle by some la
 If you've worked with these kinds of operations before, you'll know that rotating a vector involves multiplying it with a matrix consisting of sines and cosines of the angle to be rotated to. That seems counter productive, since those are the functions we're trying to compute!
 
 $$
-\newcommand\colvec[1]{\begin{bmatrix}#1\end{bmatrix}}
-
-\colvec{x'\\y'} = \begin{bmatrix}\cos(\theta) & -\sin(\theta)\\\sin(\theta) & \cos(\theta)\end{bmatrix} \colvec{x\\y}
+\begin{bmatrix}
+x' \\
+y'
+\end{bmatrix} = \begin{bmatrix}
+\cos(\theta) & -\sin(\theta) \\
+\sin(\theta) & \cos(\theta)
+\end{bmatrix} \begin{bmatrix}
+x \\
+y
+v\end{bmatrix}
 $$
 
 We'll put that aside for a second, and get a big picture overview before solving this problem. Now, it's fairly obvious that rotating by say `22.75˚` is the same as rotating by `45˚` and then `-22.5˚` - i.e. we can break up a rotation into smaller parts, with both positive and negative components.
@@ -101,16 +108,38 @@ With some understanding in hand, we can return to the issue of, well, rotations 
 
 $$
 \cos(\theta) = \frac{1}{\sqrt{1 + tan^2(\theta)}}
-\\ \\
+$$
+
+$$
 \sin(\theta) = \frac{\tan(\theta)}{\sqrt{1 + tan^2(\theta)}}
-\\ \\
-\colvec{x'\\y'} = \cos(\theta)\begin{bmatrix}1 & -\tan(\theta)\\\tan(\theta) & 1\end{bmatrix} \colvec{x\\y}
+$$
+
+$$
+\begin{bmatrix}
+x' \\
+y'
+\end{bmatrix} = \cos(\theta)\begin{bmatrix}
+1 & -\tan(\theta) \\
+\tan(\theta) & 1
+\end{bmatrix} \begin{bmatrix}
+x \\
+y
+\end{bmatrix}
 $$
 
 We have a few constants ones now, but we still have the `tan(a)`, plus the `cos(a)` out front. Let's ignore the `cos(a)` and focus on getting rid of `tan(a)`. As you saw when we ran through the algorithm, we're always rotating by a total of `~90˚`: First by `45˚`, then `22.5˚`, then `11.25˚`, and so on. Since we're doing this a fixed number of times, we can just precompute those values, and put them in a table. You might be thinking: *"You said there wouldn't be any tables!"*. Well, no. I said there wouldn't be any *expensive* tables. This table, in our case, will only contain 16 `uint32_t`s - a whopping 64 bytes! Even the most stripped down embedded projects can *usually* afford that. (In contrast, an *unoptimised* table for `sin(x)` that contains 4096 entries covering values from -1 to 1 would need 16KiB - and that's pretty poor precision!)
 
 $$
-\colvec{x'\\y'} = \cos(\theta)\begin{bmatrix}1 & -table[i]\\table[i] & 1\end{bmatrix} \colvec{x\\y}
+\begin{bmatrix}
+x' \\
+y'
+\end{bmatrix} = \cos(\theta)\begin{bmatrix}
+1 & -table[i] \\
+table[i] & 1
+\end{bmatrix} \begin{bmatrix}
+x \\
+y
+\end{bmatrix}
 $$
 
 That means our rotation matrix now only contains constants! We do however still have that `cos(a)` term. In fact, every iteration brings it's own new `cos(a)` term. But because of algebra, we can simply multiply all those terms together and apply them at the end.
@@ -151,7 +180,7 @@ Then, when we want to compute a sine or a cosine, we take the angle (e.g. `0.915
 Then setup initial parameters:
 
 ```
-x = 0.60725 * (1 << 16)
+x = 39796
 y = 0
 z = 59978
 ```

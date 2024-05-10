@@ -4,9 +4,9 @@
  <title>Francis Stokes :: Githublog</title>
  <description>I'm sick of complex blogging solutions, so markdown files in a git repo it is.</description>
  <link>https://github.com/francisrstokes/githublog</link>
- <copyright>2023 Francis Stokes - All rights reserved</copyright>
- <lastBuildDate>Fri, 05 May 2023 06:42:00 GMT</lastBuildDate>
- <pubDate>Fri, 05 May 2023 06:42:00 GMT</pubDate>
+ <copyright>2024 Francis Stokes - All rights reserved</copyright>
+ <lastBuildDate>Fri, 10 May 2024 20:37:47 GMT</lastBuildDate>
+ <pubDate>Fri, 10 May 2024 20:37:47 GMT</pubDate>
  <ttl>1440</ttl>
 
 <item>
@@ -39,6 +39,14 @@
   <description>My home "lab" is, unfortunately, a manifestation of the unwinnable, uphill battle against entropy. The latest victim to the sprawl of boards, prototypes, and other miscellanea was my little Adafruit CP2104 USB to serial converter. As far as I can tell, it has literally dropped off the face of the earth. This is particularly irritating as I'm in the middle of another project for an upcoming video on the \[channel]\(http...</description>
   <link>https://github.com/francisrstokes/githublog/blob/main/2023/3/1/building-a-jank-uart-cable-from-scavenged-parts.md</link>
   <pubDate>Wed, 01 Mar 2023 00:00:00 GMT</pubDate>
+</item>
+
+<item>
+  <title>Why the CORDIC algorithm lives rent-free in my head
+</title>
+  <description>This post is an adaptation of a twitter thread I put together a few days ago.  CORDIC is an algorithm for computing trig functions like sin, cos, tan etc on low powered hardware, without an FPU (i.e. no floating point) or expensive lookup tables. In fact, it reduces these complex functions to simple addit...</description>
+  <link>https://github.com/francisrstokes/githublog/blob/main/2024/5/10/cordic.md</link>
+  <pubDate>Fri, 10 May 2024 00:00:00 GMT</pubDate>
 </item>
 
 

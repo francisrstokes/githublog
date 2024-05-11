@@ -89,7 +89,7 @@ y
 v\end{bmatrix}
 $$
 
-We'll put that aside for a second, and get a big picture overview before solving this problem. Now, it's fairly obvious that rotating by say `22.75˚` is the same as rotating by `45˚` and then `-22.5˚` - i.e. we can break up a rotation into smaller parts, with both positive and negative components.
+We'll put that aside for a second, and get a big picture overview before solving this problem. Now, it's fairly obvious that rotating by say `22.5˚` is the same as rotating by `45˚` and then `-22.5˚` - i.e. we can break up a rotation into smaller parts, with both positive and negative components.
 
 Let's say that we have a maximum rotation of `90˚` (𝚷/2 radians), and we're trying to figure out `sin(0.7)` (about `40˚`). Starting with a vector `(1, 0)` and a target of `0.7` radians, we rotate `0.7853` rads (`45˚`) anti-clockwise.
 

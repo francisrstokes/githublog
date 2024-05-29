@@ -5,8 +5,8 @@
  <description>I'm sick of complex blogging solutions, so markdown files in a git repo it is.</description>
  <link>https://github.com/francisrstokes/githublog</link>
  <copyright>2024 Francis Stokes - All rights reserved</copyright>
- <lastBuildDate>Sat, 11 May 2024 21:29:37 GMT</lastBuildDate>
- <pubDate>Sat, 11 May 2024 21:29:37 GMT</pubDate>
+ <lastBuildDate>Wed, 29 May 2024 17:56:32 GMT</lastBuildDate>
+ <pubDate>Wed, 29 May 2024 17:56:32 GMT</pubDate>
  <ttl>1440</ttl>
 
 <item>
@@ -47,6 +47,14 @@
   <description>This post is an adaptation of a twitter thread I put together a few days ago.  CORDIC is an algorithm for computing trig functions like sin, cos, tan etc on low powered hardware, without an FPU (i.e. no floating point) or expensive lookup tables. In fact, it reduces these complex functions to simple addit...</description>
   <link>https://github.com/francisrstokes/githublog/blob/main/2024/5/10/cordic.md</link>
   <pubDate>Fri, 10 May 2024 00:00:00 GMT</pubDate>
+</item>
+
+<item>
+  <title>Everything I Know About The Fast Inverse Square Root Algorithm
+</title>
+  <description>The fast inverse square root algorithm, made famous (though not invented) by programming legend John Carmack in the Quake 3 source code, computes an inverse square root $\frac{1}{\sqrt{x}}$ with a bewildering handful of lines that interpret and manipulate the raw bits of float. It's wild....</description>
+  <link>https://github.com/francisrstokes/githublog/blob/main/2024/5/29/fast-inverse-sqrt.md</link>
+  <pubDate>Wed, 29 May 2024 00:00:00 GMT</pubDate>
 </item>
 
 

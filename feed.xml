@@ -5,8 +5,8 @@
  <description>I'm sick of complex blogging solutions, so markdown files in a git repo it is.</description>
  <link>https://github.com/francisrstokes/githublog</link>
  <copyright>2024 Francis Stokes - All rights reserved</copyright>
- <lastBuildDate>Wed, 29 May 2024 17:56:32 GMT</lastBuildDate>
- <pubDate>Wed, 29 May 2024 17:56:32 GMT</pubDate>
+ <lastBuildDate>Sat, 09 Nov 2024 20:16:37 GMT</lastBuildDate>
+ <pubDate>Sat, 09 Nov 2024 20:16:37 GMT</pubDate>
  <ttl>1440</ttl>
 
 <item>
@@ -55,6 +55,14 @@
   <description>The fast inverse square root algorithm, made famous (though not invented) by programming legend John Carmack in the Quake 3 source code, computes an inverse square root $\frac{1}{\sqrt{x}}$ with a bewildering handful of lines that interpret and manipulate the raw bits of float. It's wild....</description>
   <link>https://github.com/francisrstokes/githublog/blob/main/2024/5/29/fast-inverse-sqrt.md</link>
   <pubDate>Wed, 29 May 2024 00:00:00 GMT</pubDate>
+</item>
+
+<item>
+  <title>I sent an ethernet packet
+</title>
+  <description>For as long as I've been making videos on the low byte productions youtube channel, I've wanted to make a series about "Networking from scratch", by which I mean building a full TCP/IP stack from the ground up on a microcontroller. It's been nearly 6 years now, and the past few days felt like as good a time as any to start. This blog entry is fairly limited in scope; On the...</description>
+  <link>https://github.com/francisrstokes/githublog/blob/main/2024/11/1/sending-an-ethernet-packet.md</link>
+  <pubDate>Fri, 01 Nov 2024 00:00:00 GMT</pubDate>
 </item>
 
 

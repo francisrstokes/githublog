@@ -10,6 +10,7 @@ The [feed generator is bespoke](./feed-builder/index.ts), and why you might argu
 
 ## Articles
 
+- [I sent an ethernet packet](./2024/11/1/sending-an-ethernet-packet.md) [1/11/2024]
 - [Everything I Know About The Fast Inverse Square Root Algorithm](./2024/5/29/fast-inverse-sqrt.md) [29/5/2024]
 - [Why the CORDIC algorithm lives rent-free in my head](./2024/5/10/cordic.md) [10/5/2024]
 - [Building A Jank UART to USB Cable From Scavenged Parts](./2023/3/1/building-a-jank-uart-cable-from-scavenged-parts.md) [3/1/2023]

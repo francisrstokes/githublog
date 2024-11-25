@@ -10,6 +10,7 @@ The [feed generator is bespoke](./feed-builder/index.ts), and why you might argu
 
 ## Articles
 
+- [I got an IP address](./2024/11/26/getting-an-ip-address.md) [26/11/2024]
 - [I sent an ethernet packet](./2024/11/1/sending-an-ethernet-packet.md) [1/11/2024]
 - [Everything I Know About The Fast Inverse Square Root Algorithm](./2024/5/29/fast-inverse-sqrt.md) [29/5/2024]
 - [Why the CORDIC algorithm lives rent-free in my head](./2024/5/10/cordic.md) [10/5/2024]

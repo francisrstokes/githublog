@@ -216,7 +216,7 @@ In binary form, this would be `0b100011011` (or `0x11B` in hex). For illustrativ
     ------------
     000000101110
 
-=         101110 = 0x46
+=         101110 = 0x2E
 ```
 
 ### A computational approach

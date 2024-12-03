@@ -429,100 +429,58 @@ $$
 
 No divisions, only multiplications! The exact steps to go from the first form to this one are *numerous* to say the least, but I've included it in full for completeness. Feel free to skip over it and pick back up on the code below.
 
-$$
-y_{n+1} = y_n - \frac{\frac{1 - xy_n^2}{y_n^2}}{-\frac{2}{y_n^3}}
-$$
+Starting equation:
 
 $$
-y_{n+1} = y_n - \frac{1 - xy_n^2}{y_n^2} \cdot -\frac{y_n^3}{2}
+y_{n+1} = y_n - \frac{\frac{1}{y_n^2} - x}{-\frac{2}{y_n^3}}
 $$
 
-$$
-y_{n+1} = y_n - \frac{-1 - xy_n^2}{y_n^2} \cdot \frac{y_n^3}{2}
-$$
+Recognize that dividing by a fraction is the same as multiplying by its reciprocal:
 
 $$
-y_{n+1} = y_n - \frac{-1 - xy_n^2}{\cancel{y_n^2}} \cdot \frac{\cancel{y_n^2}y_n}{2}
+y_{n+1} = y_n - \left(\frac{1}{y_n^2} - x\right) \cdot \left(-\frac{y_n^3}{2}\right)
 $$
 
-$$
-y_{n+1} = y_n - (-1 - xy_n^2 \cdot \frac{y_n}{2})
-$$
+Distribute the reciprocal term to the binomial inside the parentheses:
 
 $$
-y_{n+1} = y_n - (-(1-xy_n^2) \cdot \frac{y_n}{2})
+y_{n+1} = y_n - \left(\frac{1}{y_n^2} \cdot -\frac{y_n^3}{2} - x \cdot -\frac{y_n^3}{2}\right)
 $$
 
-$$
-y_{n+1} = y_n - (-1\cdot(1-xy_n^2) \cdot \frac{y_n}{2})
-$$
+Simplify each term:
 
 $$
-y_{n+1} = y_n - (-1\cdot1 + -1\cdot(-xy_n^2) \cdot \frac{y_n}{2})
+y_{n+1} = y_n - \left(-\frac{y_n}{2} + \frac{x \cdot y_n^3}{2}\right)
 $$
 
-$$
-y_{n+1} = y_n - (-1\frac{y_n}{2} + xy_n^2\frac{y_n}{2})
-$$
+Distribute the negative sign:
 
 $$
-y_{n+1} = y_n - (-\frac{y_n}{2} + \frac{xy_n^2y_n}{2})
+y_{n+1} = y_n - \left(-\frac{y_n}{2}\right) - \left(\frac{x \cdot y_n^3}{2}\right)
 $$
 
-$$
-y_{n+1} = y_n - (\frac{-y_n+xy_n^3}{2})
-$$
+Combine like terms:
 
 $$
-y_{n+1} = y_n - (\frac{y_n \cdot -1 +xy_n^3)}{2})
+y_{n+1} = y_n + \frac{y_n}{2} - \frac{x \cdot y_n^3}{2}
 $$
 
-$$
-y_{n+1} = y_n - (\frac{y_n \cdot -1 + y_n(xy_n^2)}{2})
-$$
+Factor out \( y_n \):
 
 $$
-y_{n+1} = y_n - (\frac{y_n(-1 + xy_n^2)}{2})
+y_{n+1} = y_n\left(1 + \frac{1}{2} - \frac{x \cdot y_n^2}{2}\right)
 $$
 
-$$
-y_{n+1} = y_n \cdot \frac{2}{2} - \frac{y_n(-1 + xy_n^2)}{2}
-$$
+Simplify the constants:
 
 $$
-y_{n+1} =  \frac{2y_n}{2} - \frac{y_n(-1 + xy_n^2)}{2}
+y_{n+1} = y_n\left(\frac{3}{2} - \frac{x \cdot y_n^2}{2}\right)
 $$
 
-$$
-y_{n+1} = \frac{2y_n - y_n(-1 + xy_n^2)}{2}
-$$
+Convert 3/2 to 1.5 and x/2 to 0.5x
 
 $$
-y_{n+1} = \frac{2y_n + y_n(-1(-1 + xy_n^2))}{2}
-$$
-
-$$
-y_{n+1} = \frac{y_n(2 -1(-1 + xy_n^2))}{2}
-$$
-
-$$
-y_{n+1} = \frac{y_n(2 + 1 -xy_n^2)}{2}
-$$
-
-$$
-y_{n+1} = \frac{y_n(3 -xy_n^2)}{2}
-$$
-
-$$
-y_{n+1} = y_n(\frac{3}{2} - \frac{xy_n^2}{2})
-$$
-
-$$
-y_{n+1} = y_n(\frac{3}{2} - \frac{x}{2} y_n^2)
-$$
-
-$$
-y_{n+1} = y_n \cdot (1.5 - (0.5x \cdot y_n \cdot y_n))
+y_{n+1} = y_n\left(1.5 - 0.5x \cdot y_n^2\right)
 $$
 
 So that is the last line of the function before the return:
